@@ -52,9 +52,3 @@ def nr7(t,endkonzentration):
     equation2 = sympy.Eq(1*sympy.exp(a*x),endkonzentration)
     solution = sympy.nsolve(equation2,x,0)
     print(f"Lösung ist : {solution}")
-
-
-    
-    
-
-    
