@@ -1,6 +1,5 @@
 import sympy
-from sympy import log
-import numpy as np
+
 def nr1(denom,equal):
     x = sympy.Symbol("x")
     equation = sympy.Eq(x/denom,equal)
@@ -8,11 +7,11 @@ def nr1(denom,equal):
     print(f"Die Lösung für X ist {solution[0]}")
     
 def nr2 (x):
-    solution = np.exp(-x)
+    solution = sympy.exp(-x)
     print(f"Die Lösung ist :{solution}")
     
 def nr3 (num):
-    solution = np.exp(num)
+    solution = sympy.exp(num)
     print(f"Die Lösung ist: {solution:.5e}")
 
 def nr4(minutes, weight):
@@ -28,7 +27,7 @@ def nr5(minutes, weight, numberofDuplication):
     a = nr4(minutes, weight)
     equation = sympy.Eq(weight * sympy.exp(a * x), numberofDuplication * weight)
     # Using nsolve to get the numerical solution
-    solution = sympy.nsolve(equation, x, 0)  # The third argument is an initial guess, I used 0.
+    solution = sympy.nsolve(equation, x, 0) 
     print(f"Lösung ist : {solution}")
 
 def nr6(weight,minutes,a):
