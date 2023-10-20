@@ -7,8 +7,8 @@ def nr1(denom,equal):
     print(f"Die Lösung für X ist {solution[0]}")
     
 def nr2 (x):
-    solution = sympy.exp(-x)
-    print(f"Die Lösung ist :{solution}")
+    solution = sympy.exp(x)
+    print(f"Die Lösung ist: {solution}")
     
 def nr3 (num):
     solution = sympy.exp(num)
@@ -20,6 +20,7 @@ def nr4(minutes, weight):
     solution = sympy.solve(equation, A)
     
     output = float(solution[0])
+    print(f"Lösung ist: {output}")
     return output
 
 def nr5(minutes, weight, numberofDuplication):
@@ -51,3 +52,20 @@ def nr7(t,endkonzentration):
     equation2 = sympy.Eq(1*sympy.exp(a*x),endkonzentration)
     solution = sympy.nsolve(equation2,x,0)
     print(f"Lösung ist : {solution}")
+
+"""
+Einfach datei Downloaden oder Code Kopieren. 
+Dann die Datei als solche ausführen (ansonsten einmal Googeln wie man eine .py aus führt)
+
+"""    
+
+if __name__ == "__main__":
+    nr1(float(input("Gebe den denominator ein (x/denominator) : ")),float(input("Gebe die gleichung ein also (x/denominator)=? : ")))
+    nr2(float(input("Gebe die Zahl über e ein (e^x) : ")))
+    nr3(float(input("Gebe die Zahl über e ein (e^x) wird in korrecter wissenschaftlicher notation ausgegeben : ")))
+    nr4(float(input("Gebe die verdoppelungs Zeit in Minuten an : ")),float(input("Gebe das Anfangs Gewicht in Gramm an : ")))
+    nr5(float(input("Gebe die verdoppelungs Zeit in Minuten an : ")),float(input("Gebe das Anfangs Gewicht in Gramm an : ")),float(input("Gebe die Vervielfachung an eg: Fünfach = 5 ect. :")))
+    nr6(float(input("Gebe die verdoppelungs Zeit in Minuten an : ")),float(input("Gebe das Anfangs Gewicht in Gramm an : ")),float(input("gebe A aus nr 4 An : ")))
+    nr7(float(input("Gebe die zeit zur Halbierung an in Sekunden : ")),float(input("Gebe die Endkonzentration an in (0.5 oä für 50 Prozent) : ")))
+    nr7(float(input("Gebe die zeit zur Halbierung an in Sekunden : ")),float(input("Gebe die Endkonzentration an in (0.5 oä für 50 Prozent) : ")))
+    
