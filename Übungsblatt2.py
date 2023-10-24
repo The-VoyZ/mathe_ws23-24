@@ -1,4 +1,8 @@
 import sympy
+"""
+zur installation von sympy einfach das Terminal öffnen und pip install sympy eingeben falls ihr es nicht mit cloud computing macht
+"""
+
 
 def nr1(denom,equal):
     x = sympy.Symbol("x")
