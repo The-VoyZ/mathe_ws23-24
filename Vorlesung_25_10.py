@@ -3,7 +3,12 @@ import random
 import matplotlib.pyplot as plt
 
 #Wichtig für Statistik ist die unterscheidung von Quantitative Merkmale und Qualitative Merkmale
+"""
 
+Über all wo eine "#" Genutzt wird wird der Code nicht ausgeführt das benutze ich um Angaben kommentare zu schreiben aber auch um Print ausgaben nicht im Terminal Anzuzeigen.
+Das ist wichtig für VisualStudioCode aber nicht für Jupiter Notebooks dort wird der Code trozdem Ausgeführt wenn man die zeile ausführt.
+
+"""
 species = "Adelie" #definiert eine Variable als String | ein string wird mit "" oder '' Defniniert. Species könnte genau so gut x heißen da es frei definierbar ist
 anzahl = 17 #Integer ist immer eine Ganze zahl
 gewicht = 4.880 #float zahl also zahl mit "Komma stellen" 
@@ -17,9 +22,9 @@ random.sample(range(10),5) #gibt 5 zahlen als array zurück die zwischen 0 und 1
 #Seeding
  
 random.seed(123)#gibt dem Random generator eine Anfangszahl / Buchstaben um die zufalls zahlen zu generieren. 
-print(random.randint(1,100))
+#print(random.randint(1,100))
 random.seed(123)
-print(random.randint(1,100))#Wird die gleiche zahl wie der erste Print ausgeben da der seed wieder eingesetzt wurde
+#print(random.randint(1,100))#Wird die gleiche zahl wie der erste Print ausgeben da der seed wieder eingesetzt wurde
 
 #df wird fast immer als variable für Data Frames genutzt. Dataframes sind nichts anderes als Excel tabellen / CSV dateien in python schön dargestellt.
 df = sns.load_dataset("penguins") 
