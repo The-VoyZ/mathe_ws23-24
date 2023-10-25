@@ -1,0 +1,17 @@
+Hier ist ein Kleines FAQ von Fragen die mir gestellt wurden ! 
+
+//Frage 1:
+
+Was genau bedeutet dieses „seaborn“ (sns)?
+//
+Seaborn ist eine Libary (sowas wie ein Add on im Browser) die für Graphen und statistische Analysen genutzt werden kann.
+Und man hat sich so dauf geeinigt das man das kürzel dafür sns nennt. Ist einfach nur eine gängige schreib weise. Mann kann es aber auch importieren wie man will (sns) an sich ist nur eine Variable wie x in mathe.
+
+man kann also auch so was wie
+Seaborn.scatterplott(x=zeit, y=konz) machen oder halt sns.scatterplott(x=zeit y=konz)
+
+bei import wird die variable nur zugewiesen.
+also :
+import seaborn as sns // wahlweise auch // import seaborn as x / y /z
+das ist also nur eine Konvention es sns zu nennen.
+
