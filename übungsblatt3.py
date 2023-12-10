@@ -27,3 +27,4 @@ print(df.loc[133])
 
 #Aufgabe 8
 print(df["island"].value_counts())
+

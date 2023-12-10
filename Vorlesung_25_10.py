@@ -24,7 +24,7 @@ random.sample(range(10),5) #gibt 5 zahlen als array zurück die zwischen 0 und 1
 random.seed(123)#gibt dem Random generator eine Anfangszahl / Buchstaben um die zufalls zahlen zu generieren. 
 #print(random.randint(1,100))
 random.seed(123)
-#print(random.randint(1,100))#Wird die gleiche zahl wie der erste Print ausgeben da der seed wieder eingesetzt wurde
+print(random.randint(1,100))#Wird die gleiche zahl wie der erste Print ausgeben da der seed wieder eingesetzt wurde
 
 #df wird fast immer als variable für Data Frames genutzt. Dataframes sind nichts anderes als Excel tabellen / CSV dateien in python schön dargestellt.
 df = sns.load_dataset("penguins") 
@@ -33,7 +33,7 @@ df = sns.load_dataset("penguins")
 #Histogramm 
 graph1 = sns.displot(df, x="flipper_length_mm")#Erstellt ein Balkendiagramm aus der Flipper Länge in mm die im DF liegt
 plt.close() # um den graphen anzuzeigen einfach plt.show() die raute entfernen und bei plt.close() raute davor hinzufühen. wird plt.close() nicht auskommentiert wird der Graph nicht angezeigt. Ansonsten werden alle Graphen die in diesem Scrypt erstellt werden auf einmal angezeigt in verschiedenen fenstern. 
-#plt.show() #Einfach die raute entfernen um den Plot anzuzeigen da es kein Jupiter notebbook ist. muss ich es anzeigen lass und die # wird dazu genutzt auszukommentieren das der code nicht ausgeführt wird.
+plt.show() #Einfach die raute entfernen um den Plot anzuzeigen da es kein Jupiter notebbook ist. muss ich es anzeigen lass und die # wird dazu genutzt auszukommentieren das der code nicht ausgeführt wird.
 
 
 sns.histplot(df , x="flipper_length_mm", bins= 20 ,binwidth= 2.5) # erstellt ein Balkendiagramm mit 20 unterscheidungen und ist 2.5 Weit
